@@ -6,9 +6,10 @@ var path = require("path");
 
 var app = express();
 
+app.get("/", (req, res) => res.send("BURGER"))
 
 var PORT = process.env.PORT || 8080;
 
-app.listen(PORT, console.log("Server listening on port: ${PORT}"));
+app.listen(PORT, console.log("Server listening on port: " + PORT));
 
 
